@@ -1,0 +1,39 @@
+import { ArrowRight } from 'lucide-react';
+
+export function Hero() {
+  const scrollToContact = () => {
+    const element = document.getElementById('iletisim');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  return (
+    <section id="anasayfa" className="relative h-screen min-h-[600px] flex items-center justify-center">
+      <div 
+        className="absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage: `url('https://images.unsplash.com/photo-1767514536631-b8a259fbb8bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25zdHJ1Y3Rpb24lMjBwbGFzdGVyJTIwd29yayUyMGludGVyaW9yfGVufDF8fHx8MTc3MDgwNDYwNnww&ixlib=rb-4.1.0&q=80&w=1080')`
+        }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-900/90 to-gray-800/70"></div>
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+          Detaylarda Ustalık, İşçilikte Güven
+        </h1>
+        <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-3xl mx-auto">
+          Alçı, boya, alçıpan ve kartonpiyer uygulamalarında kaliteli işçilik ve zamanında teslim.
+        </p>
+        <button 
+          onClick={scrollToContact}
+          className="inline-flex items-center px-8 py-4 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-colors shadow-lg hover:shadow-xl"
+        >
+          İletişime Geç
+          <ArrowRight className="ml-2 w-5 h-5" />
+        </button>
+      </div>
+    </section>
+  );
+}
