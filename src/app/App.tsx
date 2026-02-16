@@ -9,9 +9,9 @@ import { Footer } from './components/Footer';
 
 export default function App() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen w-full overflow-x-hidden">
       <Header />
-      <main className="pt-16">
+      <main className="pt-20 md:pt-24 lg:pt-16 w-full">
         <Hero />
         <WhyUs />
         <About />
