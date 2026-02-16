@@ -31,7 +31,10 @@ const projectImages = [
   { id: 20, src: '/WhatsApp Image 2026-02-13 at 12.19.02 AM (6).jpeg' },
   { id: 21, src: '/WhatsApp Image 2026-02-13 at 12.19.02 AM (7).jpeg' },
   { id: 22, src: '/WhatsApp Image 2026-02-13 at 12.19.02 AM.jpeg' },
-  { id: 23, src: '/WhatsApp Image 2026-02-13 at 12.19.03 AM.jpeg' }
+  { id: 23, src: '/WhatsApp Image 2026-02-13 at 12.19.03 AM.jpeg' },
+  { id: 24, src: '/WhatsApp Image 2026-02-16 at 11.47.57 AM (1).jpeg' },
+  { id: 25, src: '/WhatsApp Image 2026-02-16 at 11.47.57 AM (2).jpeg' },
+  { id: 26, src: '/WhatsApp Image 2026-02-16 at 11.47.57 AM.jpeg' }
 ];
 
 export function References() {

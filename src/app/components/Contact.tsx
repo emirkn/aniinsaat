@@ -44,7 +44,7 @@ export function Contact() {
                 </div>
                 <div className="ml-4">
                   <h4 className="font-bold text-gray-800 mb-1">Telefon</h4>
-                  <p className="text-gray-600"><a href="tel:+905326281506" className="hover:text-orange-600">0532 628 15 06</a></p>
+                  <p className="text-gray-600"><a href="tel:+905434471814" className="hover:text-orange-600">0543 447 18 14</a></p>
                 </div>
               </div>
 

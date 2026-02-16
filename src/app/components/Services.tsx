@@ -1,38 +1,30 @@
-import { Paintbrush, Grid3x3, Crown } from 'lucide-react';
+import { Paintbrush, Wrench, Hammer, Palette, Home } from 'lucide-react';
 
 const services = [
   {
+    icon: Home,
+    title: 'Dış Cephe Uygulamaları',
+    description: 'Profesyonel dış cephe çözümleri'
+  },
+  {
+    icon: Hammer,
+    title: 'Kara Sıva Uygulamaları',
+    description: 'Kaliteli kara sıva işleri'
+  },
+  {
+    icon: Wrench,
+    title: 'Mantolama Uygulamaları',
+    description: 'ısı ve ses yalıtımı sistemleri'
+  },
+  {
     icon: Paintbrush,
-    title: 'Alçı & Boya',
-    description: 'Pürüzsüz yüzeyler, estetik ve uzun ömürlü uygulamalar',
-    features: [
-      'İç mekan alçı sıva',
-      'Profesyonel boya uygulaması',
-      'Duvar hazırlık işleri',
-      'Dekoratif boya teknikleri'
-    ]
+    title: 'Fileli Kalekim Uygulamaları',
+    description: 'Dekoratif fileli kalekim tasarımları'
   },
   {
-    icon: Grid3x3,
-    title: 'Alçıpan',
-    description: 'Bölme duvar, asma tavan ve dekoratif çözümler',
-    features: [
-      'Bölme duvar sistemleri',
-      'Asma tavan uygulamaları',
-      'Dekoratif tavan tasarımları',
-      'Ses ve ısı yalıtımı'
-    ]
-  },
-  {
-    icon: Crown,
-    title: 'Kartonpiyer',
-    description: 'Klasik ve modern iç mekan tasarımları',
-    features: [
-      'Kartonpiyer pervaz',
-      'Tavan göbeği uygulamaları',
-      'Dekoratif süsleme',
-      'Klasik ve modern desenler'
-    ]
+    icon: Palette,
+    title: 'Dekoratif Boya Uygulamaları',
+    description: 'Modern ve klasik boya teknikleri'
   }
 ];
 
@@ -49,31 +41,23 @@ export function Services() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
               <div 
                 key={index}
-                className="bg-white p-8 rounded-lg shadow-sm hover:shadow-lg transition-all group"
+                className="bg-white p-6 rounded-lg shadow-sm hover:shadow-lg transition-all group text-center"
               >
-                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                  <Icon className="w-8 h-8 text-white" />
+                <div className="w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform mx-auto">
+                  <Icon className="w-7 h-7 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-800 mb-3">
+                <h3 className="text-lg font-bold text-gray-800 mb-2">
                   {service.title}
                 </h3>
-                <p className="text-gray-600 mb-6">
+                <p className="text-gray-600 text-sm">
                   {service.description}
                 </p>
-                <ul className="space-y-3">
-                  {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-start">
-                      <div className="w-1.5 h-1.5 bg-orange-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="text-gray-600 text-sm">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
               </div>
             );
           })}

@@ -9,11 +9,8 @@ export function About() {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
               Hakkımızda
             </h2>
-            <p className="text-gray-600 mb-6 leading-relaxed">
-              ANİ İNŞAAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ, inşaat sektöründe alçı, boya, alçıpan ve kartonpiyer uygulamaları konusunda uzmanlaşmış, profesyonel bir firmadır.
-            </p>
             <p className="text-gray-600 mb-8 leading-relaxed">
-              Konut ve ticari projelerimizde kaliteli işçilik, zamanında teslimat ve müşteri memnuniyetini ön planda tutarak hizmet vermekteyiz. Deneyimli ekibimiz ve güçlü referanslarımızla sektörde güvenilir bir iş ortağı olarak konumlanmış bulunuyoruz.
+              ANİ İNŞAAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ, 2005 yılından itibaren inşaat sektöründe hizmet veren; alçı, boya, alçıpan, kartonpiyer uygulamaları ile birlikte dış cephe sistemleri, kara sıva, mantolama ve dekoratif bordex uygulamalarında uzman kadrosu ve güçlü referanslarıyla kaliteli, güvenilir ve zamanında teslim prensibiyle çalışan köklü bir firmadır.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
