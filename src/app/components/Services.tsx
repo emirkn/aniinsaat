@@ -1,6 +1,21 @@
-import { Paintbrush, Wrench, Hammer, Palette, Home } from 'lucide-react';
+import { Paintbrush, Wrench, Hammer, Palette, Home, PaintRoller, Ruler, Layers } from 'lucide-react';
 
 const services = [
+  {
+    icon: PaintRoller,
+    title: 'Alçı Ve Boya Uygulamaları',
+    description: 'Alçı ve boya uygulama çözümleri'
+  },
+  {
+    icon: Ruler,
+    title: 'Alçıpan Uygulamaları',
+    description: 'Bölme duvar ve tavan alçıpan çözümleri'
+  },
+  {
+    icon: Layers,
+    title: 'Kartonpiyer Uygulamaları',
+    description: 'Tavan ve duvar kartonpiyer dekorları'
+  },
   {
     icon: Home,
     title: 'Dış Cephe Uygulamaları',
@@ -25,7 +40,8 @@ const services = [
     icon: Palette,
     title: 'Dekoratif Boya Uygulamaları',
     description: 'Modern ve klasik boya teknikleri'
-  }
+  },
+
 ];
 
 export function Services() {
@@ -41,13 +57,13 @@ export function Services() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-6 lg:gap-8">
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
-              <div 
+              <div
                 key={index}
-                className="bg-white p-6 rounded-lg shadow-sm hover:shadow-lg transition-all group text-center"
+                className="bg-white p-6 lg:p-7 xl:p-8 rounded-lg shadow-sm hover:shadow-lg transition-all group text-center min-h-[260px]"
               >
                 <div className="w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform mx-auto">
                   <Icon className="w-7 h-7 text-white" />
